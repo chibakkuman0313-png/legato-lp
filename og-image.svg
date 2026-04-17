@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a5b4fc"/>
+      <stop offset="50%" stop-color="#c4b5fd"/>
+      <stop offset="100%" stop-color="#f0abfc"/>
+    </linearGradient>
+    <linearGradient id="logo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4338ca"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="20" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- 装飾的な点 -->
+  <circle cx="120" cy="160" r="3" fill="#818cf8" opacity="0.6"/>
+  <circle cx="1080" cy="120" r="2" fill="#c4b5fd" opacity="0.5"/>
+  <circle cx="1050" cy="480" r="4" fill="#a78bfa" opacity="0.4"/>
+  <circle cx="200" cy="520" r="2" fill="#818cf8" opacity="0.5"/>
+
+  <!-- ロゴ -->
+  <g transform="translate(80, 80)">
+    <rect width="80" height="80" rx="18" fill="url(#logo)"/>
+    <path d="M40 14 L66 24 L66 48 C66 63 55 75 40 79 C25 75 14 63 14 48 L14 24 Z" fill="white" opacity="0.95"/>
+    <text x="40" y="58" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="#4338ca" text-anchor="middle">L</text>
+  </g>
+  <text x="180" y="132" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif" font-size="36" font-weight="800" fill="white">Legato</text>
+
+  <!-- メインコピー -->
+  <text x="80" y="280" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif" font-size="78" font-weight="900" fill="url(#title)" filter="url(#glow)">もしもの時に、</text>
+  <text x="80" y="378" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif" font-size="78" font-weight="900" fill="url(#title)" filter="url(#glow)">大切な人へつなぐ。</text>
+
+  <!-- サブコピー -->
+  <text x="80" y="446" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif" font-size="26" fill="#cbd5e1">サブスク・ネット銀行・SNS・暗号資産…</text>
+  <text x="80" y="484" font-family="system-ui, -apple-system, 'Hiragino Sans', sans-serif" font-size="26" fill="#cbd5e1">デジタル資産を安全に記録する終活アプリ</text>
+
+  <!-- 特徴バッジ -->
+  <g transform="translate(80, 530)">
+    <rect x="0" y="0" width="210" height="48" rx="24" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <circle cx="24" cy="24" r="4" fill="#10b981"/>
+    <text x="40" y="31" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#e2e8f0">完全ローカル保存</text>
+
+    <rect x="230" y="0" width="220" height="48" rx="24" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <circle cx="254" cy="24" r="4" fill="#10b981"/>
+    <text x="270" y="31" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#e2e8f0">アカウント登録不要</text>
+
+    <rect x="470" y="0" width="150" height="48" rx="24" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <circle cx="494" cy="24" r="4" fill="#10b981"/>
+    <text x="510" y="31" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#e2e8f0">無料で始める</text>
+  </g>
+
+  <!-- URL -->
+  <text x="1120" y="600" font-family="system-ui, sans-serif" font-size="18" fill="#64748b" text-anchor="end">legato-lp.vercel.app</text>
+</svg>
